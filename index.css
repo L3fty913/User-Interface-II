@@ -78,6 +78,12 @@ footer{
 
 }
 
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bottom img {
     margin: 0 auto;
     padding: 60px
@@ -87,4 +93,66 @@ div .middle {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media (max-width: 800px) {
+    nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .group1 {
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+       align-items: center;
+        }
+        .group2 {
+            display: flex;
+        flex-direction: row;
+        width: 800px;
+       align-items: center;
+        }
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 500px;
+    }
+    nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .group1 {
+        display: flex;
+        flex-direction: row;
+        max-width: 500px;
+       align-items: center;
+        }
+        .group2 {
+            display: flex;
+        flex-direction: row;
+        width: 500px;
+       align-items: center;
+        }
+        .bottom {
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 }
