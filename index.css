@@ -1,3 +1,6 @@
+body{
+    background: rgb(65, 63, 63);
+}
 h1{
     font-size: 30px;
     font-family:  sans-serif;
@@ -40,12 +43,17 @@ h2 {
 }
 .middle {
     background-color:rgb(65, 63, 63);
+    display: flex;
+    align-items: center;
 }
 
  p {
+     font-style: sans-serif;
+     font-size: 35px;
+     margin: 60px;
     text-align: center;
     word-wrap: normal;
-    width: 250px;
+    width: 500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,8 +72,19 @@ footer{
     background-color: rgb(65, 63, 63);
 }
 .middle img {
-    border: dotted  rgb(105, 33, 33) 10px ;
+    border: dotted  rgb(105, 33, 33) 25px ;
     border-radius: 50%;
     shape-outside: circle()
 
+}
+
+.bottom img {
+    margin: 0 auto;
+    padding: 60px
+}
+
+div .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
